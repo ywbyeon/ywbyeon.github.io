@@ -41,9 +41,9 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title" style="text-align:justify;">{% if entry.num %}{{ entry.num }}. {% endif %}{{- entry.title -}}</div>
     <!-- Author -->
-    <div class="author">
+    <div class="author" style="text-align:justify;">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
@@ -87,7 +87,7 @@
             </a>
           {%- else -%}
             {{ author.first }}
-            {{ author.last }}
+            {{ author.last -}}
           {% endif %}
         {%- endif -%}
       {% endfor %}
@@ -131,7 +131,7 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{entry.journal}}</em>{% endcapture %}
+      {% capture entrytype %}<em><b>{{entry.journal}}</b></em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{entry.booktitle}}</em> {% endcapture %}
     {% elsif thesis contains entry.type %}
@@ -139,21 +139,21 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %}
-    {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{entry.year}}{% endcapture %}
-    {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+        {% if entry.volume %}{%- capture entryvolume -%},{{ " " }}{{ entry.volume }}{%- endcapture -%}{% endif %}
+    {% if entry.number %}{%- capture entrynumber -%}{{ " " }}({{ entry.number }}){%- endcapture -%}{% endif %}
+    {% if entry.pages %}{%- capture entrypages -%},{{ " " }}{{ entry.pages | remove_first: "-"}}{%- endcapture -%}{% endif %}
+    {% if entry.year %}{%- capture entryyear -%}{{ " " }}({{ entry.year }}){%- endcapture -%}{% endif %}
+    {% capture periodical %}{{ entrytype }}{{ entryvenue }}{{ entryvolume }}{{ entrynumber }}{{ entrypages }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
-
+    {%- if entry.doi -%}
+      <div class="periodical"><a href="{{ entry.url }}" target="_blank"><i class="ai ai-doi"></i>{{ entry.doi }}</a></div>
+    {%- endif -%}
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.abstract %}
