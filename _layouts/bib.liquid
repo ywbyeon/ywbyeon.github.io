@@ -41,7 +41,10 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title" style="text-align:justify;">{% if entry.num %}{{ entry.num }}. {% endif %}{{- entry.title -}}</div>
+    <div class="title" style="text-align:justify;">
+      {% if entry.num %}{{ entry.num }}. {% endif %}
+      {{- entry.title -}}
+    </div>
     <!-- Author -->
     <div class="author" style="text-align:justify;">
       {% assign author_array_size = entry.author_array | size %}
@@ -140,10 +143,18 @@
       {% capture entrytype %}{% endcapture %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-        {% if entry.volume %}{%- capture entryvolume -%},{{ " " }}{{ entry.volume }}{%- endcapture -%}{% endif %}
-    {% if entry.number %}{%- capture entrynumber -%}{{ " " }}({{ entry.number }}){%- endcapture -%}{% endif %}
-    {% if entry.pages %}{%- capture entrypages -%},{{ " " }}{{ entry.pages | remove_first: "-"}}{%- endcapture -%}{% endif %}
-    {% if entry.year %}{%- capture entryyear -%}{{ " " }}({{ entry.year }}){%- endcapture -%}{% endif %}
+    {% if entry.volume %}
+      {%- capture entryvolume -%},{{ " " }}{{ entry.volume }}{%- endcapture -%}
+    {% endif %}
+    {% if entry.number %}
+      {%- capture entrynumber -%}{{ " " }}({{ entry.number }}){%- endcapture -%}
+    {% endif %}
+    {% if entry.pages %}
+      {%- capture entrypages -%},{{ " " }}{{ entry.pages | remove_first: "-"}}{%- endcapture -%}
+    {% endif %}
+    {% if entry.year %}
+      {%- capture entryyear -%}{{ " " }}({{ entry.year }}){%- endcapture -%}
+    {% endif %}
     {% capture periodical %}{{ entrytype }}{{ entryvenue }}{{ entryvolume }}{{ entrynumber }}{{ entrypages }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
@@ -152,7 +163,9 @@
       {{ entry.note | strip }}
     </div>
     {%- if entry.doi -%}
-      <div class="periodical"><a href="{{ entry.url }}" target="_blank"><i class="ai ai-doi"></i>{{ entry.doi }}</a></div>
+      <div class="periodical">
+        <a href="{{ entry.url }}" target="_blank"><i class="ai ai-doi"></i>{{ entry.doi }}</a>
+      </div>
     {%- endif -%}
     <!-- Links/Buttons -->
     <div class="links">
