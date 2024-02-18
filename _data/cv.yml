@@ -2,96 +2,131 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Young-Woon Byeon
     - name: Languages
-      value: English, German
+      value: Korean, English
+    # - name: Date of Birth
+    #   value: September 29th, 1988
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Materials Science and Engineering
+      institution: Korea University
+      location: Seoul, Korea
+      year: "Feb. 2020"
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "Thesis title: Studies of sodiation behaviors in Sn anodes using <i>in situ</i> electron microscopy"
+        - "Advisor: Prof. Jae-Chul Lee"
+    - title: B.S. in Materials Sciences and Engineering
+      institution: Korea University
+      location: Seoul, Korea
+      year: "Aug. 2013"
 
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior Research Scientist
+      year: Nov. 2023<br>  - Present
+      location: Seoul, Korea
+      institution: Korea Institute of Science and Technology (KIST)
+      department: Head of the TEM group, Advanced Analysis and Data Center
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developing advanced EM techniques for energy storage materials applications.
+        - Investigations on the materials/interfacial degradation behaviors.<br>(e.g. solid-state electrolytes and composite electrodes)
+ 
+    - title: Postdoctoral Research Employee
+      year: Mar. 2020<br>  - Oct. 2023
+      location: Berkeley, CA,<br>United States
+      institution: Lawrence Berkeley National Laboratory (LBNL)
+      department: Materials Sciences Division
       description:
-        - Description 1.
-        - Description 2.
+        - "Investigated the buried interphases between a solid-state electrolyte and a metal anode, based on the one of the most advanced TEM in the world: TEAM I in NCEM LBNL."
+        - "Developed an airtight sample transfer system to characterize air-sensitive materials."
+        - "3-dimensional FIB/STEM tomography on the bio-nanomaterials using diatom frustules."
+        - "Systematically synthesized and characterized on the high-performance oxide catalyst support materials for PEMFC applications."
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Research Assistant (RA)
+      year: May. 2013<br>  - Feb. 2020
+      location: Seoul, Korea
+      institution: Korea Institute of Science and Technology (KIST)
+      department: Advanced Analysis Center
       description:
+        - Developed an airtight sample transfer system to characterize air-sensitive materials.
+        - Pioneered the correlative analysis of battery electrode materials by using various analytical instruments (XRD, XPS, SEM, TEM, EDS, EELS, and APT).
+        - Observed the formation and growth behavior of SEI layer during fast charging/discharging.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Undergraduate Intern
+      institution: Battelle-Korea Institute
+      year: Jan. 2012<br> - Feb. 2012
+      location: Seoul, Korea
+      department: Research Laboratory
 
-- title: Open Source Projects
+    - title: Sergeant <i>(honorable discharged)</i>
+      institution: Republic of Korea Air Force
+      department: Education and Training Command
+      year: Mar. 2009<br> - Apr. 2011
+      location: Jinju, Korea
+
+- title: Teaching Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Mentorships
+      year: 2017 - 2020
+      maindescription: Mentoring graduate/undergraduate students in the lab
+
+    - title: Training visiting students from Dongduk Girl's High School
+      year: 2018
+
+    - title: Teaching Assistant
+      year: 2014 - 2017
+      institution: Korea University
+      department: Department of Materials Sciences of Engineering
+      maindescription: "Offered Courses:"
+      description:
+        - TA in Mechanical Properties of Materials
+        - TA in Metallic Material Processing
+        - TA in Engineering Mathematics I
+
+- title: Service and Outreach Experiences
+  type: map
+  contents:
+    - name: Member
+      value: Electrochemical Society (Since 2022)
+      link: ""
+    - name: Member
+      value: Materials Research Society (Since 2018)
+      link: ""
+    - name: Member 
+      value: Korean Society of Metals and Materials (Since 2014)
+      link: ""
+    - name: Member
+      value: Korean Society of Microscopy (Since 2014)
+      link: ""
+    - name: Member
+      value: Korean American Scientists and Engineers Association (KSEA) (2020-2023)
+      link: ""
+    - name: President
+      value: KSEA Berkeley Local Chapter (2021-2023)
+    - name: Journal Reviewer
+      value: "<i>Materials Today Energy</i>; <i>Electrochimica Acta</i>; <i>ACS Applied Materials and Interfaces</i>; <i>Applied Sciences</i>; <i>Materials</i>; <i>International Journal of Molecular Sciences</i>; <i>Molecules</i>; <i>Batteries</i>; <i>Energies</i>"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - [Add award details here in the format of year and award name]
+
+- title: Patents
+  type: list
+  contents:
+    - Shape-controlled multi-pod nanowire structure for direct methanol fuel cell application and preparation method thereof, <i><b>KR Patent:</b> 1014211040000</i> (2014)
+
+- title: Publications
+  type: list
+  contents:
+    - [List out the publications]
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - [List out your academic interests]
