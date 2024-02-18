@@ -2,8 +2,9 @@
 layout: default
 permalink: /blog/
 title: blog
+icon-fa: fa-solid fa-users
 nav: true
-nav_order: 1
+nav_order: 8
 pagination:
   enabled: true
   collection: posts
