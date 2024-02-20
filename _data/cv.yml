@@ -3,6 +3,20 @@
   contents:
     - name: Full Name
       value: Young-Woon Byeon
+    - name: Title
+      value: Senior Research Scientist
+    - name: Department
+      value: Advanced Analysis and Data Center
+    - name: Institution
+      value: Korea Institute of Science and Technology (KIST)
+    - name: Email
+      value: ywbyeon@kist.re.kr
+    - name: Phone
+      value: +82 2-958-5992
+    - name: Url
+      value: https://ywbyeon.github.io/
+    - name: Summary
+      value: A Korean-born material scientist, just started a new tenure-track position in KIST.
     - name: Languages
       value: Korean, English
     # - name: Date of Birth
@@ -100,8 +114,8 @@
     - name: Member
       value: Korean Society of Metals and Materials (Since 2014)
       link: ""
-    - name: Member
-      value: Korean Society of Microscopy (Since 2014)
+    - name: Editorial Director
+      value: Korean Society of Microscopy (since 2024, member since 2014)
       link: ""
     - name: Member
       value: Korean American Scientists and Engineers Association (KSEA) (2020-2023)
@@ -114,8 +128,16 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - [Add award details here in the format of year and award name]
-
+    - year: Oct. 2019
+      name: Best Poster Awards
+      venue: 2019 Fall conference of Korean Institute of Metals and Materials (KIM), Daegu, Korea
+    - year: Jan. 2019
+      name: Best Student Researcher Award
+      venue: Korea Institute of Science and Technology, Daegu, Korea
+    - year: Nov. 2019
+      name: Best Poster Awards
+      venue: 2018 MRS Fall Meeting, Boston, MA, USA
+    
 - title: Patents
   type: list
   contents:
