@@ -7,11 +7,8 @@ subtitle: Senior Research Scientist<br> Advanced Electron Microscopy Group<br> <
 profile:
   align: right
   image: profile_pic_YWB_GGB.jpg
+  alt: Me at Battery Spencer, CA in 2021
   image_circular: false # crops the image to make it circular
-  more_info: # >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
@@ -23,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 Welcome to the official website of Dr. Young-Woon Byeon and the Advanced Electron Microscopy Group at KIST.
 
-Our research team is dedicated to advancing electron microscopy techniques—including Imaging, Diffraction, and Spectroscopy—to explore the fundamental aspects of materials science. By leveraging the expertise, we collaborate with numerous researching groups from the KIST and beyond. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials tailored for energy storage applications.
+Our research team is dedicated to advancing electron microscopy (EM) techniques—including Imaging, Diffraction, and Spectroscopy—to explore the fundamental aspects of materials science. By leveraging the expertise, we collaborate with numerous researching groups from the KIST and beyond. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials tailored for energy storage applications.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

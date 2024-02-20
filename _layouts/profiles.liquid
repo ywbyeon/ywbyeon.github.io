@@ -6,7 +6,7 @@ layout: page
     {% if page.profiles %}
       {% for profile in page.profiles %}
         <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}" style="margin-right:40px;">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}
@@ -18,11 +18,11 @@ layout: page
             {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
           {% endif %}
           {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
+            <div class="more-info" style="margin-bottom: 40px">{{ profile.more_info }}</div>
           {% endif %}
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix" style="text-align:justify;">
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}

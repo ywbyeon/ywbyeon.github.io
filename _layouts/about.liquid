@@ -7,6 +7,7 @@ layout: default
       <img
         style="display: inline-block; vertical-align: -5px; max-height: 44px; padding-right: 0px; margin-bottom: -3px;"
         src="{{ 'logo.png' | prepend: '/assets/img/' }}"
+        alt="logo"
       >
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -70,11 +71,12 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <div class="clustrmap">
+    <div class="clustrmap" style="margin:30px 0 30px 0;">
       <script
         type="text/javascript"
         id="clustrmaps"
         src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=IkiScMJ1EKDe6FvSMOVWS_6bkVp2P42Pn0EMT85LkQM&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff"
+        alt="Clustrmap"
       ></script>
     </div>
 
