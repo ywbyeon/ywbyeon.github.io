@@ -8,6 +8,7 @@ nav: true
 nav_order: 4
 display_categories: [TEM, Holder, FIB, SEM, Others]
 horizontal: false
+type: facility
 ---
 
 NOTE: This page is under construction. <i class="fa-solid fa-person-digging"></i>

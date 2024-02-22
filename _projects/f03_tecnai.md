@@ -3,9 +3,10 @@ layout: page
 title: Tecnai F20 G2
 description:
 img: assets/img/f03_Tecnai.jpg
-redirect: https://unsplash.com
+# redirect: https://unsplash.com
 importance: 3
 category: TEM
+facility: true
 giscus_comments: false
 ---
 
