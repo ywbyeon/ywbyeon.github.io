@@ -16,11 +16,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-## <i class="fa-regular fa-face-smile-beam"></i>&nbsp;Greetings
+## <i class="fa-regular fa-face-smile-beam"></i>&nbsp;greetings!
 
 Welcome to the official website of Dr. Young-Woon Byeon and the Advanced Electron Microscopy Group at KIST.
 
-Our research team is dedicated to advancing electron microscopy (EM) techniques—including Imaging, Diffraction, and Spectroscopy—to explore the fundamental aspects of materials science. By leveraging the expertise, we collaborate with numerous researching groups from the KIST and beyond. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials tailored for energy storage applications.
+This research group is dedicated to advancing electron microscopy (EM) techniques—including Imaging, Diffraction, and Spectroscopy—to explore the fundamental aspects of materials science. By leveraging the expertise, we collaborate with numerous researching groups from the KIST and beyond. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials tailored for energy storage applications.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

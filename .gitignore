@@ -10,3 +10,4 @@ Gemfile.lock
 node_modules/
 vendor
 *.afphoto
+a00_example.md

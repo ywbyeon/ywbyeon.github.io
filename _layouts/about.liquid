@@ -43,7 +43,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix" style="margin-top: 20px; text-align:justify;">
+    <div class="clearfix" style="margin-top: 20px; margin-right: 25px; text-align: justify;">
       {{ content }}
     </div>
 
@@ -58,7 +58,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><i class="fa-regular fa-newspaper"></i> latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><i class="fa-regular fa-newspaper"></i> latest blog posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

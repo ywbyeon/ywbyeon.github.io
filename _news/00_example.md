@@ -1,8 +1,9 @@
 ---
 layout: post
-title: A long announcement with details
+title: A long announcement with details (Achieved for reference)
 date: 2015-11-07 16:11:00-0400
 inline: false
+hidden: true
 related_posts: false
 ---
 

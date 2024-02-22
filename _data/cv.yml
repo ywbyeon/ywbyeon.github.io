@@ -14,7 +14,7 @@
     - name: Phone
       value: +82 2-958-5992
     - name: Url
-      value: https://ywbyeon.github.io/
+      value: https://ywbyeon.github.io/ (This website)
     - name: Summary
       value: A Korean-born material scientist and electron microscopist, just started a new tenure-track position in KIST.
     # - name: Date of Birth
@@ -120,25 +120,46 @@
     - name: President
       value: KSEA Berkeley Local Chapter (2021-2023)
     - name: Journal Reviewer
-      value: "<i>Materials Today Energy</i>; <i>Electrochimica Acta</i>; <i>ACS Applied Materials and Interfaces</i>; <i>Applied Sciences</i>; <i>Materials</i>; <i>International Journal of Molecular Sciences</i>; <i>Molecules</i>; <i>Batteries</i>; <i>Energies</i>"
+      value: "<i>Materials Today Energy; Electrochimica Acta; ACS Applied Materials and Interfaces; Applied Sciences; Materials; International Journal of Molecular Sciences; Molecules; Batteries; Energies</i>"
 
 - title: Honors and Awards
   type: time_table
   img: cv_awards.png
   alt: Awards
   contents:
-    - year: Oct. 2019
-      title: Best Poster Awards
-      department: 2019 Fall conference of Korean Institute of Metals and Materials (KIM)
-      location: Daegu, Korea
-    - year: Jan. 2019
+    - year: 2022.04.14.
+      title: Grant for Networking of Next-generation Leaders in Science and Technology (2022)
+      department: The Korean Federation of Science and Technology (KOFST)
+      location: Berkeley, CA,<br>United States
+    - year: 2019.01.31.
       title: Best Student Researcher Award
       department: Korea Institute of Science and Technology
       location: Seoul, Korea
-    - year: Nov. 2019
+    - year: 2018.11.29.
       title: Best Poster Awards
-      department: 2018 MRS Fall Meeting
+      department: 2018 Fall Meeting of Materials Research Society (MRS)
       location: Boston, MA,<br>United States
+    - year: 2017.12.20.
+      title: Industrial Scholarship (2018-2019)
+      department: LG Chem
+      location: Seoul, Korea
+    - year: 2016.05.13.
+      title: Excellence Paper Award
+      department: 2016 Spring conference
+      location: Seoul, Korea
+    - year: 2014 - 2019
+      title: 8 Best Poster Awards from various domestic conferences
+      department: Korean Institute of Metals and Materials (KIM), <br>Korean Society of Microscopy (KSM), etc.
+      location: South Korea
+    - year: 2014.05.07.
+      title: Korea Technocomplex Scholarship for graduate students
+      department: Korea University
+      location: Seoul, Korea
+    - year: 2012.02.02.
+      title: Best Paper Award
+      department: 4th Internship Papers Competition for undergraduates, Korea University
+      location: Seoul, Korea
+
     
 - title: Patents
   type: list
@@ -148,4 +169,4 @@
 - title: Publications
   type: list
   contents:
-    - For details, visit the <a href="/publications/">[publications]</a> page.
+    - For detailed list, visit the <a href="/publications/">[publications]</a> page.
