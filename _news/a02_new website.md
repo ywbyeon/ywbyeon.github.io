@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A brand-new website (This!) is published. Some pages will be done soon.
+A brand-new website (This!) is published. Some working pages will be done soon.
