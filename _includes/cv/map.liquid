@@ -5,7 +5,18 @@
         <b>{{ content.name }}</b>
       </td>
       {% if content.value %}
-        <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+        <td class="p-1 pl-2 text">
+          {{ content.value }}
+        </td>
+      {% endif %}
+      {% if content.items %}
+        <td class="p-1 pl-2 text">
+          {% for item in content.items %}
+            <li>
+              <span class="item">{{ item }}</span>
+            </li>
+          {% endfor %}
+        </td>
       {% endif %}
       {% if content.links %}
         <td class="p-1 pl-2 font-weight-light text">

@@ -61,16 +61,16 @@
               {% for item in content.description %}
                 <li>
                   {% if item.contents %}
-                    <span class="item-title">{{ item.title }}</span>
+                    <span class="item-title" style="text-align:justify;">{{ item.title }}</span>
                     <ul class="subitems">
                       {% for subitem in item.contents %}
                         <li>
-                          <span class="subitem">{{ subitem }}</span>
+                          <span class="subitem" style="text-align:justify;">{{ subitem }}</span>
                         </li>
                       {% endfor %}
                     </ul>
                   {% else %}
-                    <span class="item">{{ item }}</span>
+                    <span class="item" style="text-align:justify;">{{ item }}</span>
                   {% endif %}
                 </li>
               {% endfor %}

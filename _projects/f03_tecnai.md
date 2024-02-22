@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Tecnai G2
-description: a project that redirects to another website
-img: assets/img/7.jpg
+title: Tecnai F20 G2
+description:
+img: assets/img/f03_Tecnai.jpg
 redirect: https://unsplash.com
 importance: 3
 category: TEM
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

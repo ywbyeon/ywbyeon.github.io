@@ -16,9 +16,7 @@
     - name: Url
       value: https://ywbyeon.github.io/
     - name: Summary
-      value: A Korean-born material scientist, just started a new tenure-track position in KIST.
-    - name: Languages
-      value: Korean, English
+      value: A Korean-born material scientist and electron microscopist, just started a new tenure-track position in KIST.
     # - name: Date of Birth
     #   value: September 29th, 1988
 
@@ -55,7 +53,7 @@
       institution: Lawrence Berkeley National Laboratory (LBNL)
       department: Materials Sciences Division
       description:
-        - "Investigated the buried interphases between a solid-state electrolyte and a metal anode, based on the one of the most advanced TEM in the world: TEAM I in NCEM LBNL."
+        - "Investigated the buried interphases between a solid-state electrolyte and a metal anode."
         - "Developed an airtight sample transfer system to characterize air-sensitive materials."
         - "3-dimensional FIB/STEM tomography on the bio-nanomaterials using diatom frustules."
         - "Systematically synthesized and characterized on the high-performance oxide catalyst support materials for PEMFC applications."
@@ -85,12 +83,17 @@
 - title: Teaching Experience
   type: time_table
   contents:
-    - title: Mentorships
-      year: 2017 - 2020
-      maindescription: Mentoring graduate/undergraduate students in the lab
-
-    - title: Training visiting students from Dongduk Girl's High School
-      year: 2018
+    - title: Lecturer
+      year: 2024<br> - Present
+      maindescription: "Offered Classes:"
+      description:
+       - "2024 professional training course in the field of research equipment: TEM"
+    - title: Trainings and Mentorships
+      year: 2017<br> - Present
+      maindescription: "Offered Activities:"
+      description:
+        - Mentored graduate/undergraduate students in the lab
+        - Trained visiting students from Dongduk Girl's High School (2018)
 
     - title: Teaching Assistant
       year: 2014 - 2017
@@ -102,24 +105,18 @@
         - TA in Metallic Material Processing
         - TA in Engineering Mathematics I
 
+
 - title: Service and Outreach Experiences
   type: map
   contents:
-    - name: Member
-      value: Electrochemical Society (Since 2022)
-      link: ""
-    - name: Member
-      value: Materials Research Society (Since 2018)
-      link: ""
-    - name: Member
-      value: Korean Society of Metals and Materials (Since 2014)
-      link: ""
     - name: Editorial Director
       value: Korean Society of Microscopy (since 2024, member since 2014)
-      link: ""
     - name: Member
-      value: Korean American Scientists and Engineers Association (KSEA) (2020-2023)
-      link: ""
+      items: 
+        - Electrochemical Society (Since 2022)
+        - Materials Research Society (Since 2018)
+        - Korean Society of Metals and Materials (Since 2014)
+        - Korean American Scientists and Engineers Association (KSEA) (2020-2023)
     - name: President
       value: KSEA Berkeley Local Chapter (2021-2023)
     - name: Journal Reviewer
@@ -127,28 +124,28 @@
 
 - title: Honors and Awards
   type: time_table
+  img: cv_awards.png
+  alt: Awards
   contents:
     - year: Oct. 2019
-      name: Best Poster Awards
-      venue: 2019 Fall conference of Korean Institute of Metals and Materials (KIM), Daegu, Korea
+      title: Best Poster Awards
+      department: 2019 Fall conference of Korean Institute of Metals and Materials (KIM)
+      location: Daegu, Korea
     - year: Jan. 2019
-      name: Best Student Researcher Award
-      venue: Korea Institute of Science and Technology, Daegu, Korea
+      title: Best Student Researcher Award
+      department: Korea Institute of Science and Technology
+      location: Seoul, Korea
     - year: Nov. 2019
-      name: Best Poster Awards
-      venue: 2018 MRS Fall Meeting, Boston, MA, USA
+      title: Best Poster Awards
+      department: 2018 MRS Fall Meeting
+      location: Boston, MA,<br>United States
     
 - title: Patents
   type: list
   contents:
-    - Shape-controlled multi-pod nanowire structure for direct methanol fuel cell application and preparation method thereof, <i><b>KR Patent:</b> 1014211040000</i> (2014)
+    - Shape-controlled multi-pod nanowire structure for direct methanol fuel cell application and preparation method thereof<br><i><b>KR Patent:</b> 1014211040000</i> (2014)
 
 - title: Publications
   type: list
   contents:
-    - [List out the publications]
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - [List out your academic interests]
+    - For details, visit the <a href="/publications/">[publications]</a> page.

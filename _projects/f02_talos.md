@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Talos G1 F200X
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Talos F200X G1
+description:
+img: assets/img/f02_Talos.jpg
 importance: 2
 category: TEM
 giscus_comments: false

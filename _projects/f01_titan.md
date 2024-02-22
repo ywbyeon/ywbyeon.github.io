@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Titan G1
-description: a project with a background image
-img: assets/img/12.jpg
+description:
+img: assets/img/f01_Titan.jpg
 importance: 1
 category: TEM
-related_publications: true
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

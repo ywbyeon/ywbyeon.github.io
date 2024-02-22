@@ -5,7 +5,8 @@ layout: default
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
-        {{ page.title }}
+        {% if page['icon-fa'] %}<i class="{{ page.icon-fa }}"></i>{{ ' ' }}{% endif -%}
+        {% if page.title_curriculum_vitae == true %}curriculum vitae{% else %}{{ page.title }}{% endif %}
         {% if page.cv_pdf %}
           <a
             href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
@@ -27,6 +28,14 @@ layout: default
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            {% if entry.img %}
+              <div class="image" style="margin-bottom: 15px;">
+                <img
+                  src="{{ entry.img | prepend: '/assets/img/' }}"
+                  alt="{{ entry.alt }}"
+                >
+              </div>
+            {% endif %}
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -51,10 +60,11 @@ layout: default
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
+        {% if page['icon-fa'] %}<i class="{{ page.icon-fa }}"></i>{{ ' ' }}{% endif -%}
         {{ page.title }}
         {% if page.cv_pdf %}
           <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"

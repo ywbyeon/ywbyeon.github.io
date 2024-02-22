@@ -3,6 +3,12 @@
  ******************************************************************************/
 
 // Typography
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  font-family: "Spoqa Han Sans Neo", "Helvetica", "sans-serif";
+  font-weight: 400;
+}
 
 p,
 h1,
@@ -29,9 +35,9 @@ table {
   td,
   th {
     color: var(--global-text-color);
-    font-size: 1rem;
     font-family: "Spoqa Han Sans Neo", "Helvetica", "sans-serif";
     font-weight: 400;
+    font-size: 1rem;
   }
 
   th {

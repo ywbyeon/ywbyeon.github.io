@@ -4,8 +4,10 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+icon-fa: fa-solid fa-address-card
+title_curriculum_vitae: true # show "curriculum vitae in page title
+cv_pdf: CV_YWByeon_202312.pdf
+description: You can also download the printable version of this page from the top pdf icon.
 toc:
   sidebar: left
 ---

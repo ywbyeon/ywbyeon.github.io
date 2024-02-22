@@ -6,9 +6,11 @@ icon-fa: fa-solid fa-microscope
 description: We utilize the state-of-the-art EM facility in AADC KIST, advancing TEM research and application in materials science.
 nav: true
 nav_order: 4
-display_categories: [TEM, others]
+display_categories: [TEM, Holder, FIB, SEM, Others]
 horizontal: false
 ---
+
+NOTE: This page is under construction. <i class="fa-solid fa-person-digging"></i>
 
 <!-- pages/projects.md -->
 <div class="projects">
