@@ -87,7 +87,7 @@
       year: 2024<br> - Present
       maindescription: "Offered Classes:"
       description:
-       - "2024 professional training course in the field of research equipment: TEM"
+        - "2024 professional training course in the field of research equipment: TEM"
     - title: Trainings and Mentorships
       year: 2017<br> - Present
       maindescription: "Offered Activities:"
@@ -105,14 +105,13 @@
         - TA in Metallic Material Processing
         - TA in Engineering Mathematics I
 
-
 - title: Service and Outreach Experiences
   type: map
   contents:
     - name: Editorial Director
       value: Korean Society of Microscopy (since 2024, member since 2014)
     - name: Member
-      items: 
+      items:
         - Electrochemical Society (Since 2022)
         - Materials Research Society (Since 2018)
         - Korean Society of Metals and Materials (Since 2014)
@@ -160,7 +159,6 @@
       department: 4th Internship Papers Competition for undergraduates, Korea University
       location: Seoul, Korea
 
-    
 - title: Patents
   type: list
   contents:
