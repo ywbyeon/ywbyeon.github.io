@@ -11,6 +11,11 @@ nav_order: 2
 †: equal contribution, \*: corresponding author
 
 <!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
 <div class="publications">
 
 {% bibliography %}

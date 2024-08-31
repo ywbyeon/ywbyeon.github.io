@@ -3,13 +3,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <!-- Customized Logo -->
-        <img
-          style="display: inline-block; max-height: 27px; vertical-align: middle; padding-right: 3px; margin-bottom: 2px"
-          src="{{ 'logo.png' | prepend: '/assets/img/' }}"
-          alt="logo"
-        >
-        <a class="navbar-brand title" href="{{ site.baseurl }}/">
+        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -101,7 +95,8 @@
                   </div>
                 </li>
               {% else %}
-                <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
+                {% assign parent_link = p.permalink | remove: 'index.html' %}
+                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
@@ -113,12 +108,21 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% if site.search_enabled %}
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          {% endif %}
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
-                <i class="fa-solid fa-moon"></i>
-                <i class="fa-solid fa-sun"></i>
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
             </li>
           {% endif %}
