@@ -49,7 +49,7 @@ display_categories: [postdoc, grad, undergrad]
 
 #### Salary
 
-Salary will be commensurate with qualifications and experience.
+- Postdoc salaries will be commensurate with qualifications and experience.
 
 <div class="members"> <!-- css를 members에서 가져오기 위한 목적 -->
   <a id="grad" href=".#grad">
@@ -74,7 +74,7 @@ Salary will be commensurate with qualifications and experience.
 
 #### Salary
 
-Salary for grad students follows KIST policy and related law.
+- Graduate student salaries are based on KIST school policies and related laws.
 
 #### Useful Links
 
