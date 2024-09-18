@@ -125,6 +125,7 @@
   type: time_table
   img: cv_awards.png
   alt: Awards
+  width: 590px
   contents:
     - year: 2022.04.14.
       title: Grant for Networking of Next-generation Leaders in Science and Technology (2022)

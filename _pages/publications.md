@@ -5,7 +5,7 @@ title: publications
 icon-fa: fa-solid fa-book
 description: publications by categories in reversed chronological order.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 †: equal contribution, \*: corresponding author

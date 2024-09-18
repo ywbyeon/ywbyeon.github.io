@@ -17,8 +17,21 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- <div class="loader"></div> -->
+    <!-- Display Loader (code by dcode) -->
     <!-- Header -->
     {% include header.liquid %}
+
+    <!-- Banner -->
+    {% if page.banner_img %}
+      <div class="banner">
+        <div class="img" style="background-image: url('/assets/img/{{ page.banner_img }}'); margin-top: 0px;" alt="{{ page.banner_alt }}"></div>
+        <div class="text">
+          <h1 class="banner-title">{{ page.banner_title }}</h1>
+          <h2 class="banner-subtitle">{{ page.banner_subtitle }}</h2>
+        </div>
+      </div>
+    {% endif %}
 
     <!-- Content -->
     <div class="container mt-5" role="main">

@@ -2,25 +2,34 @@
 layout: about
 title: home
 permalink: /
-subtitle: Senior Research Scientist<br> Advanced Electron Microscopy Group<br> <a href="https://www.kist.re.kr">Korea Institute of Science and Technology (KIST)</a>
-
-profile:
-  align: right
-  image: profile_pic_YWB_GGB.jpg
-  alt: Me at Battery Spencer, CA in 2021
-  image_circular: false # crops the image to make it circular
-
+# subtitle:
+banner_img: banner_02.jpg
+banner_title: Advanced Electron Microscopy Laboratory
+banner_subtitle: We advance multi-scale EM analyses for breakthroughs in materials science
+banner_alt: # Photo by OC Gonzalez on Unsplash
+display_title: false # display site title
 news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 ## <i class="fa-regular fa-face-smile-beam"></i>&nbsp;greetings!
 
-Welcome to the official website of Dr. Young-Woon Byeon and the Advanced Electron Microscopy Group at KIST.
+Welcome to the official website of the Advanced Electron Microscopy Lab at KIST.
 
-This research group is dedicated to advancing electron microscopy (EM) techniques—including Imaging, Diffraction, and Spectroscopy—to explore the fundamental aspects of materials science. By leveraging the expertise, we collaborate with numerous researching groups from the KIST and beyond. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials tailored for energy storage applications.
+Led by Dr. Young-Woon Byeon, the lab specializes in advanced electron microscopy (EM) techniques—including imaging, diffraction, and spectroscopy—to explore the fundamental aspects of materials science. We collaborate with various research groups within KIST and beyond, harnessing the power of cutting-edge EM techniques.
+
+Focusing on energy storage materials, we use real-time (in-situ and operando) analytics to trace atomic, ionic, and electronic movements with high precision. Our strategy integrates insights from the in-situation analysis in morphology, structure, and chemical properties obtained from various devices, including TEM, FIB, SEM, XRD, XPS, etc. This comprehensive understanding enables us to design and develop innovative, high-performance materials for energy storage applications.
+
+## <i class="fa-regular fa-lightbulb"></i>&nbsp;research topics
+
+The following research topics are the primary interests of the group:
+
+- Correlating the performance degradation of battery materials with their microstructural evolution.
+- In situ / operando studies on the diffusion of charge-carrier ions (H<sup>+</sup>/Li<sup>+</sup>/Na<sup>+</sup>/K<sup>+</sup>, etc.) ions during electrochemical reactions.
+- Processing and analyzing diffraction and spectrum data for statistical insights into materials interfaces.
+- Utilizing STEM / FIB tomography for detailed analysis of environment-sensitive materials.
+- Incorporating machine Learning / automation into the electron microscopy workflow, including sample preparation, data acquisition and processing.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

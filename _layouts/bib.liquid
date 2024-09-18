@@ -47,7 +47,10 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title" style="text-align:justify;">
+      {% if entry.num %}{{ entry.num }}. {% endif %}
+      {{- entry.title -}}
+    </div>
     <!-- Author -->
     <div class="author" style="text-align:left;">
       {% assign author_array_size = entry.author_array | size %}
@@ -181,6 +184,11 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {%- if entry.doi -%}
+      <div class="periodical">
+        <a href="{{ entry.url }}" target="_blank"><i class="ai ai-doi"></i>{{ entry.doi }}</a>
+      </div>
+    {%- endif -%}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -261,7 +269,8 @@
 
       {% assign entry_has_google_scholar_badge = false %}
       {% if entry.google_scholar_id %}
-        {% assign entry_has_google_scholar_badge = true %}
+        {% assign entry_has_google_scholar_badge = false %}
+        <!-- 제작 테스트 중에는 fetching error가 나므로 false로 -->
       {% endif %}
 
       {% assign entry_has_inspirehep_badge = false %}

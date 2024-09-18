@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/
 title: blog
 icon-fa: fa-solid fa-users
-nav: true
+nav: false
 nav_order: 8
 pagination:
   enabled: true

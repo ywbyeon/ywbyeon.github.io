@@ -27,6 +27,10 @@ strong {
   font-weight: 400;
 }
 
+h2 {
+  margin-top: 1em;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -388,6 +392,48 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Header banner
+.banner {
+  box-shadow:
+    rgba(0, 0, 0, 0.5) 0px -20px 15px -10px inset,
+    rgba(0, 0, 0, 0.5) 0px 20px 15px -10px inset;
+
+  .img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    margin-bottom: 2em;
+    margin-top: -4em;
+    position: relative; /* Set this to relative to position the text absolutely within this container */
+    z-index: -1;
+  }
+
+  .text {
+    position: absolute; /* Position absolute within the .img */
+    top: 19em; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(50, 50, 50);
+    z-index: 1; /* Ensure it appears above the image */
+  }
+
+  .banner-title {
+    color: white;
+    font-size: 3em; /* Size of the main title */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+  }
+
+  .banner-subtitle {
+    color: #c0c0c0;
+    font-size: 1.5em; /* Size of the subtitle */
+    font-weight: bold; /* Adjust as needed */
+    margin: 0.8em 0 0 0; /* Adjust margin as needed */
+  }
+}
+
 // Social (bottom)
 
 .social {
@@ -662,6 +708,48 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+// Members
+
+.members {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .col {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    // display: inline-block;
+    margin: 0;
+  }
+
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+
+  .member-info {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
   }
 }
 
@@ -1015,8 +1103,7 @@ progress::-moz-progress-bar {
   .dropdown-item {
     background-color: var(--global-bg-color);
     color: var(--global-text-color);
-
-    &:hover {
+    font-weight:bold &:hover {
       color: var(--global-hover-color);
     }
   }
@@ -1314,4 +1401,44 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+// loader (code by dcode)
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition:
+    opacity 0.75s,
+    visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: var(--global-theme-color);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }

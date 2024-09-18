@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: AEML # the website title (if blank, full name will be used instead)
 first_name: Young-Woon
 middle_name:
 last_name: Byeon
@@ -16,7 +16,7 @@ footer_text: >
   and <a href="https://pages.github.com/" target="_blank">GitHub</a>.
 keywords: electron-microscopy, TEM, advanced-analysis, energy-storage-materials # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: logo_v3.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://ywbyeon.github.io # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog. Leave blank for root
@@ -114,7 +114,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  "Email has an ability many channels don't: creating valuable, personal touches - at scale."<br> - David Newman
+  We would love to hear from you! Please reach out to us via email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -202,16 +202,22 @@ collections:
   facilities:
     output: true
     permalink: /facilities/:path/
+  members:
+    output: true
+    permalink: /members/:path/
 
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+job_openings: # added by YW; it displays new openings in the about page.
+  enabled: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -429,15 +435,16 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
-enable_google_verification: false # enables google site verification
-enable_bing_verification: false # enables bing site verification
+enable_google_verification: true # enables google site verification
+enable_bing_verification: true # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # enables switching between light/dark modes
+enable_navbar_everywhere: true # enables navbar title even in the about page
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_facility_categories: true # enables categorization of facilities into multiple categories

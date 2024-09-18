@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 icon-fa: fa-solid fa-diagram-project
 description: A growing collection of our cool projects.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false

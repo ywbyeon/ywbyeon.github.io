@@ -4,16 +4,20 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      <img
-        style="display: inline-block; vertical-align: -5px; max-height: 44px; padding-right: 0px; margin-bottom: -3px;"
-        src="{{ 'logo.png' | prepend: '/assets/img/' }}"
-        alt="logo"
-      >
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+      <!--
+        <img
+          style="display: inline-block; vertical-align: -5px; max-height: 44px; padding-right: 0px; margin-bottom: -3px;"
+          src="{{ 'logo_aeml.png' | prepend: '/assets/img/' }}"
+          alt="logo"
+        >
+      -->
+      {% if page.display_title %}
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
       {% endif %}
     </h1>
     <p class="desc" style="padding-left: 55px; margin-top: -6px;">{{ page.subtitle }}</p>
@@ -58,7 +62,7 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit"><i class="fa-regular fa-newspaper"></i> latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -69,6 +73,18 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit"><i class="fa-regular fa-bookmark"></i> selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Openings -->
+    {% if site.job_openings.enabled %}
+      <h2>
+        <a href="{{ '/openings/' | relative_url }}" style="color: inherit"><i class="fa-regular fa-id-badge"></i> openings</a>
+      </h2>
+      <p style="text-align:justify;">
+        We are currently seeking enthusiastic postdoctoral researchers and graduate students interested in energy & environmental materials research
+        through advanced electron microscopy techniques. We utilizes state-of-the-art TEM/STEM systems, including the Titan, Talos, and Tecnai
+        microscopes with various detectors. For more details, please contact <a href="mailto:ywbyeon@kist.re.kr">Dr. Young-Woon Byeon</a>.
+      </p>
     {% endif %}
 
     <div class="clustrmap" style="margin:30px 0 30px 0;">

@@ -1,0 +1,32 @@
+<!-- This file is to display each member item in members.md -->
+<div class="col">
+  <div class="h-100 grid-item">
+    <!-- style="flex: 1 1 100%; box-sizing: border-box; margin-bottom: 40px; max-width: 30%;" -->
+    {% if member.image %}
+      {% assign member_image_path = member.image | prepend: 'assets/img/' %}
+      {% if member.degree %}
+        {% assign member_alt_text = member.name | append: ', ' | append: member.degree %}
+      {% else %}
+        {% assign member_alt_text = member.name %}
+      {% endif %}
+      {%
+        include figure.liquid
+        loading="eager"
+        path=member_image_path
+        alt=member_alt_text
+        class="img-fluid z-depth-1"
+      %}
+    {% endif %}
+    <div class="member-info" style="margin-top: 10px;">
+      <p>
+        <b>{{ member_alt_text }}</b>
+      </p>
+      <p>{{ member.position }}</p>
+      {% if member.degree == 'Ph.D' %}
+        <p>Ph.D. from {{ member.university }}</p>
+      {% endif %}
+      <p><i class="fa-solid fa-square-envelope fa-lg"></i>&nbsp;{{ member.email }}</p>
+      <p><i class="fa-solid fa-crosshairs fa-lg"></i>&nbsp;{{ member.target }}</p>
+    </div>
+  </div>
+</div>

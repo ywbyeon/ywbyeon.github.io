@@ -2,27 +2,53 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
+      {% if site.enable_navbar_everywhere %}
+        <!-- navbar_everywhere를 검사함 -->
+        <a href="{{ site.baseurl }}/">
+          <img
+            style="display: inline-block; max-height: 50px; vertical-align: middle; padding-right: 8px; margin-bottom: 0px"
+            src="{{ 'logo_aeml.png' | prepend: '/assets/img/' }}"
+            alt="AEML: Advanced Electron Microscopy Laboratory"
+          >
         </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
+        <span>|</span>
+        <a href="https://www.kist.re.kr">
+          <img
+            style="display: inline-block; max-height: 44px; vertical-align: middle; padding-left: 8px; padding-right: 5px; margin-bottom: 0px"
+            src="{{ 'logo_kist.png' | prepend: '/assets/img/' }}"
+            alt="KIST: Korea Institute of Science and Technology"
+          >
+        </a>
+      {% else %}
+        {% if page.permalink != '/' %}
+          <!-- Hide logo when the first page -->
+          <!-- Customized Logo -->
+          <img
+            style="display: inline-block; max-height: 44px; vertical-align: middle; padding-right: 3px; margin-bottom: 2px"
+            src="{{ 'logo_aeml.png' | prepend: '/assets/img/' }}"
+            alt="AEML: Advanced Electron Microscopy Laboratory"
+          >
+          <a class="navbar-brand title" href="{{ site.baseurl }}/">
+            {% if site.title == 'blank' %}
+              {% if site.first_name %}
+                <span class="font-weight-bold">
+                  {{- site.first_name -}}
+                </span>
+              {% endif %}
+              {% if site.middle_name %}
+                {{- site.middle_name -}}
+              {% endif %}
+              {% if site.last_name %}
+                {{- site.last_name -}}
+              {% endif %}
+            {% else %}
+              {{- site.title -}}
+            {% endif %}
+          </a>
+        {% elsif site.enable_navbar_social %}
+          <!-- Social Icons -->
+          <div class="navbar-brand social">{% include social.liquid %}</div>
+        {% endif %}
       {% endif %}
       <!-- Navbar Toggle -->
       <button
