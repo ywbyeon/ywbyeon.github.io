@@ -1,6 +1,6 @@
 ---
 layout: page
-name: 김대현 | DaeHyun Kim
+name: 김대현 | Dae-Hyeon Kim
 degree:
 category: undergrad
 position: Undergraduate Intern

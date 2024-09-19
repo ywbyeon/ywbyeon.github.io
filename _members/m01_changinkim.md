@@ -1,6 +1,6 @@
 ---
 layout: page
-name: 김창인 | Chang-In Kim
+name: 김창인 | Changin Kim
 degree: Ph.D
 category: postdoc
 position: Postdoctoral Research Associate
