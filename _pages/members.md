@@ -6,7 +6,7 @@ description: Current members of the Advanced Electron Microscopy Lab (AEML)
 icon-fa: fa-solid fa-users-viewfinder
 nav: false
 nav_order: 8
-display_categories: [postdoc, undergrad] #graduate student, alumni
+display_categories: [postdoc, intern, undergrad] #graduate student, alumni
 horizontal: false
 ---
 

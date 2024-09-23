@@ -2,7 +2,7 @@
 layout: page
 name: 김해나 | Haena Kim
 degree: M.S
-category: researcher
+category: intern
 position: Research Assistant
 university: # Institution where they studied for doctoral course
 importance: 4
