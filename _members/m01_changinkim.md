@@ -9,4 +9,9 @@ importance: 1
 image: profile_pic_AEML_CIKim.jpg
 email: ckddls0000@kist.re.kr
 target: Advanced 4D-STEM analysis
+status: member
+start: 2024.07.01.
+end: 
+period: 
+current affiliation: # N/A 
 ---

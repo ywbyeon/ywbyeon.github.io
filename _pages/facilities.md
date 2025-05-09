@@ -7,35 +7,35 @@ description: We utilize the state-of-the-art EM facility in AADC KIST, advancing
 nav: true
 nav_order: 4
 display_categories: [TEM, Holder, FIB, SEM, Others]
-horizontal: false
+horizontal: true
 type: facility
 ---
 
 NOTE: This page is under construction. <i class="fa-solid fa-person-digging"></i>
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
+<!-- pages/facilities.md -->
+<div class="facilities">
+{% if site.enable_facility_categories and page.display_categories %}
+  <!-- Display categorized facilities -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
+  {% assign categorized_facilities = site.facilities | where: "category", category %}
+  {% assign sorted_facilities = categorized_facilities | sort: "importance" %}
+  <!-- Generate cards for each facility -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+    {% for facility in sorted_facilities %}
+      {% include facilities_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
+    {% for facility in sorted_facilities %}
+      {% include facilities.liquid %}
     {% endfor %}
   </div>
   {% endif %}
@@ -43,9 +43,9 @@ NOTE: This page is under construction. <i class="fa-solid fa-person-digging"></i
 
 {% else %}
 
-<!-- Display projects without categories -->
+<!-- Display facilities without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_facilities = site.facilities | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 
@@ -53,15 +53,15 @@ NOTE: This page is under construction. <i class="fa-solid fa-person-digging"></i
 
   <div class="container">
     <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+    {% for project in sorted_facilities %}
+      {% include facilities_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
+    {% for project in sorted_facilities %}
+      {% include facilities.liquid %}
     {% endfor %}
   </div>
   {% endif %}

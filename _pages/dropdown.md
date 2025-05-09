@@ -10,4 +10,7 @@ children:
   - title: divider
   - title: members
     permalink: /members-AEML/
+  - title: divider
+  - title: alumni
+    permalink: /alumni-AEML/
 ---
